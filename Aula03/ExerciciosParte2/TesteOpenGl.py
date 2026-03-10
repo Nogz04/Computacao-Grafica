@@ -16,7 +16,7 @@ ey = 2 # Aqui o ey era 1 (mudei para 2)
 ez = 2 # Aqui o ez era 1 (mudei para 2)
 
 # ===  EX10) Variável de Zoom ===
-zoon = -6 
+zoom = -6 
 
 def init():
     
@@ -36,8 +36,8 @@ def init():
 
 def draw():
     glLoadIdentity()
-    # === EX10) Uso da variável zoon na translação ===
-    glTranslatef(x, y, zoon)
+    # === EX10) Uso da variável zoom na translação ===
+    glTranslatef(x, y, zoom)
 
     # ===  EX2) Mudei a rotação do eixo Y para o X ===
     # O triângulo vai girar como se estivesse dando cambalhotas para trás (descomentar linha para ativar - e comentar a la de baixo)
@@ -66,7 +66,7 @@ def main():
     pygame.display.set_mode((640, 480), DOUBLEBUF | OPENGL)
     init()
 
-    global x, y, r, ex, ey, ez, zoon
+    global x, y, r, ex, ey, ez, zoom
 
     running = True
     while running:
@@ -88,9 +88,9 @@ def main():
                 
                 # === EX10) Controles de Zoom Z e X ===
                 if event.key == K_z:
-                    zoon += 0.2 # Aproxima (traz para frente)
+                    zoom += 0.2 # Aproxima (traz para frente)
                 if event.key == K_x:
-                    zoon -= 0.2 # Afasta (empurra para trás)
+                    zoom -= 0.2 # Afasta (empurra para trás)
             if event.type == MOUSEBUTTONDOWN:
                 if event.button == 4:
                     ex += 0.2
