@@ -1,4 +1,4 @@
-# Relatório de Investigação: Algoritmo de Rasterização de Bresenham
+# Relatório de Pesquisa: Algoritmo de Rasterização de Bresenham
 
 ## Explicação dos Algoritmos de Rasterização
 
