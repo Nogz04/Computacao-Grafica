@@ -37,7 +37,7 @@ Aqui temos o **Erro Acumulado**. O Bresenham não calcula a posição absoluta a
 * **Todo o cálculo é feito de forma incremental: o erro do pixel atual é derivado do erro do pixel anterior.**
 
 ### Principal Vantagem: Aritmética Inteira Pura
-Este algoritmo é o "padrão ouro" para performance. Ele elimina completamente o uso de números de ponto flutuante (float/double). Ele utiliza apenas:
+Este algoritmo é um padrão alto para performance. Ele elimina completamente o uso de números de ponto flutuante (float/double). Ele utiliza apenas:
 1. **Adição e Subtração**
 2. **Bit Shifting** (deslocamento de bits para multiplicar por 2), que é a operação mais rápida que um processador pode realizar.
 
