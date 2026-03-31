@@ -60,6 +60,8 @@ O **Clipping** serve para descartar tudo o que está fora da área de visão (a 
 
 **Explicação:** Se a linha é mais horizontal do que vertical, para cada pixel que avançamos no eixo X, calculamos onde o Y deve ficar para manter a linha reta.
 
+<img width="510" height="328" alt="image" src="https://github.com/user-attachments/assets/efbdc784-5e71-4531-8058-e8fd296b1eb8" />
+
 
 
 ---
