@@ -110,13 +110,19 @@ A grande vantagem é a **eficiência**. Em vez de calcular a posição do objeto
 ---
 
 ## 12) Exercício de Translação 3D
-**Questão:** Dado o ponto $P=(2, -3, 5, 1)$, aplique translação com $T_x=3, T_y=4, T_z=-2$.
 
-**a) Matriz de Translação ($M_t$):**
+**Questão:**  
+Dado o ponto $P = (2, -3, 5, 1)$, aplique uma translação com $T_x = 3$, $T_y = 4$, $T_z = -2$.
+
+---
+
+### a) Matriz de Translação ($M_t$)
+
 A matriz de translação utiliza a última coluna para os fatores de deslocamento:
 
 $$
-M_t = \begin{pmatrix}
+M_t =
+\begin{pmatrix}
 1 & 0 & 0 & 3 \\
 0 & 1 & 0 & 4 \\
 0 & 0 & 1 & -2 \\
@@ -124,16 +130,78 @@ M_t = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-**b) Cálculo do novo ponto $P'$:**
-Multiplicamos a matriz pelo ponto (em formato de coluna):
+---
+
+### b) Cálculo do novo ponto $P'$
+
+Multiplicação da matriz pelo vetor coluna:
 
 $$
-\begin{pmatrix} 1 & 0 & 0 & 3 \\ 0 & 1 & 0 & 4 \\ 0 & 0 & 1 & -2 \\ 0 & 0 & 0 & 1 \end{pmatrix} \cdot \begin{pmatrix} 2 \\ -3 \\ 5 \\ 1 \end{pmatrix} = \begin{pmatrix} (1 \cdot 2) + 3 \\ (1 \cdot -3) + 4 \\ (1 \cdot 5) - 2 \\ 1 \end{pmatrix} = \begin{pmatrix} 5 \\ 1 \\ 3 \\ 1 \end{pmatrix}
+P =
+\begin{pmatrix}
+2 \\
+-3 \\
+5 \\
+1
+\end{pmatrix}
 $$
 
-**Resultado:** $P' = (5, 1, 3, 1)$
+$$
+M_t \cdot P =
+\begin{pmatrix}
+1 & 0 & 0 & 3 \\
+0 & 1 & 0 & 4 \\
+0 & 0 & 1 & -2 \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+2 \\
+-3 \\
+5 \\
+1
+\end{pmatrix}
+$$
 
 ---
+
+### Passo a passo:
+
+$$
+x' = (1 \cdot 2) + (3 \cdot 1) = 5
+$$
+
+$$
+y' = (1 \cdot -3) + (4 \cdot 1) = 1
+$$
+
+$$
+z' = (1 \cdot 5) + (-2 \cdot 1) = 3
+$$
+
+$$
+w' = 1
+$$
+
+---
+
+### Resultado final:
+
+$$
+P' =
+\begin{pmatrix}
+5 \\
+1 \\
+3 \\
+1
+\end{pmatrix}
+$$
+
+Ou, em forma de coordenadas:
+
+$$
+P' = (5, 1, 3, 1)
+$$
 
 ## 13) Exercício de Escala 3D
 **Questão:** Aplicar escala uniforme de $0.5$ ao ponto $P=(10, 20, 30, 1)$.
